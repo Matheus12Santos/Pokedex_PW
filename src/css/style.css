@@ -1,0 +1,26 @@
+body{
+    background-color: #F8F8F8;
+}
+
+#img{
+    width: 250px;
+    display: block;
+    margin: 0px auto;
+    margin-bottom: 150px;
+}
+
+.source{
+    display: flex;
+}
+
+#pokebola{
+    width: 50px;
+}
+
+#barra_pesquisa{
+    width: 550px;
+    height: 30px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
