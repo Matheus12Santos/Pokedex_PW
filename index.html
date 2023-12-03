@@ -7,11 +7,18 @@
     <script src="./src/js/script.js"></script>
     <title>Pokédex - PW</title>
 </head>
+
 <body>
     <header>
         <img id="img" src="./src/imagens/pokemon_logo.png" alt="Logo Pokémon" title="Pokémon">
     </header>
+
     <img id="pokebola" src="./src/imagens/pokebola.png" alt="Mini Pokébola">
     <input type="Pesquisar" id="barra_pesquisa" placeholder="Digite o ID">
+    <button onclick='showPokemonList()'>PorFavor</button>
+
+    <ul id="ListaPokemons">
+        <!-- Aqui vão os pokemons "gerados" no javascript-->
+    </ul>
 </body>
 </html>
