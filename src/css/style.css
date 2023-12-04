@@ -1,23 +1,23 @@
-body{
+body {
     background-color: #F8F8F8;
 }
 
-#img{
+#img {
     width: 250px;
     display: block;
     margin: 0px auto;
     margin-bottom: 150px;
 }
 
-.source{
+.source {
     display: flex;
 }
 
-#pokebola{
+#pokebola {
     width: 50px;
 }
 
-#barra_pesquisa{
+#barra_pesquisa {
     width: 550px;
     height: 30px;
     margin: 0 auto;
@@ -26,5 +26,16 @@ body{
 }
 
 #ListaPokemons {
-    
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 50px;
+}
+
+.pokemon {
+    display: grid;
+    text-align: center;
+    width: 215px;
+    box-shadow: 12px 21px 22px 0px rgba(0,0,0,0.1);
+    margin: 3px;
+    padding: 18px;
 }
