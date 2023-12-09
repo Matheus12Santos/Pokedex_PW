@@ -13,11 +13,14 @@
     </header>
 
     <img id="pokebola" src="./src/imagens/pokebola.png" alt="Mini Pokébola">
-    <input type="search" on="getPokemonById(id)" id="barra_pesquisa" placeholder="Digite o ID">
+    <input type="number" id="searchBar" placeholder="Digite o ID">
 
     <ul id="ListaPokemons" style="list-style: none;">
         <!-- Aqui vão os pokemons "gerados" no javascript-->
     </ul>
-    
+
+    <div id="tela" class="modal">
+        <div id="selection"><!--Aqui aparecem o pokemon do Id epecifico --></div>
+    </div>
 </body>
 </html>

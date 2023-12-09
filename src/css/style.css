@@ -3,6 +3,7 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #img {
@@ -16,7 +17,7 @@ body {
     width: 50px;
 }
 
-#barra_pesquisa {
+#searchBar {
     width: 550px;
     height: 40px;
     margin: 0 auto;
@@ -37,4 +38,23 @@ body {
     box-shadow: 12px 21px 22px 0px rgba(0,0,0,0.1);
     margin: 3px;
     padding: 18px;
+}
+
+.modal {
+    display: none;
+    width: 50%; /* Largura total */
+    height: 80%; /* Altura total */
+    background-color: white; /* Cor de fundo do Modal */
+    background-color: rgba(255, 255, 255, 0.918); /* Cor de fundo do Modal com opacidade */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#selection img {
+    display: flex;
+    margin-left: 40%;
+    margin-bottom: 50px;
+    border: 3px solid #000000;
 }
