@@ -61,7 +61,7 @@ function updateBackpackModal() {
     backpackModal.appendChild(counter);
     const grid = document.createElement('div');
     grid.className = 'pokemon-grid'; 
-    backpack.forEach(pokemon => {
+    backpack.forEach((pokemon, index) => {
         const div = document.createElement('div');
         const p = document.createElement('p');
         p.textContent = pokemon.name;
@@ -69,6 +69,10 @@ function updateBackpackModal() {
         const img = document.createElement('img');
         img.src = pokemon.image;
         img.className = "pokemon-img";
+        img.addEventListener('click', function() {
+            backpack.splice(index, 1);
+            updateBackpackModal();
+        });
         div.appendChild(p);
         div.appendChild(img);
         grid.appendChild(div);
@@ -106,11 +110,12 @@ function searchIdPokemon() {
         modal.style.display = "block";
     }
     else {
-        /* var modalContent = '<br><img id="not_found" src="./src/imagens/pokemon_not_found.png" alt="pokemon_nao_encontrado">' +
-            'Pokemon não encontrado';
+        var modalContent = 'Pokemon não encontrado' + '<br><img id="not_found" src="./src/imagens/pokemon_not_found.png" alt="pokemon_nao_encontrado">';
         document.getElementById('selection').innerHTML = modalContent;
         var modal = document.getElementById('tela');
-        modal.style.display = "block"; */
+        modal.style.display = "block";
+        var poke_sumir = document.getElementById('pokebola')
+        poke_sumir.style.display = "none";
     }
 }
 
@@ -126,4 +131,18 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("backpack_modal").style.display = "block";
     });
 });
+
+window.onclick = function(event) {
+    const backpackModal = document.getElementById('backpack_modal');
+    if (event.target == backpackModal) {
+        backpackModal.style.display = "none";
+    }
+}
+
+window.onclick = function(event) {
+    const backpackModal = document.getElementById('backpack_modal');
+    if (event.target == backpackModal && event.target.className != 'pokemon-grid') {
+        backpackModal.style.display = "none";
+    }
+}
 
