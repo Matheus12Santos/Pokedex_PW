@@ -8,12 +8,19 @@
     <title>Pokédex - PW</title>
 </head>
 <body>
+    
     <header>
         <img id="img" src="./src/imagens/pokemon_logo.png" alt="Logo Pokémon" title="Pokémon">
     </header>
 
-    <img id="pokebola" src="./src/imagens/pokebola.png" alt="Mini Pokébola">
-    <input type="number" id="searchBar" placeholder="Digite o ID">
+    <div id="remote">
+        <input type="number" id="searchBar" placeholder="Digite o ID">
+        <button id="backpack"></button>
+    </div>
+
+    <div id="backpack_modal">
+        <p>Pokémon na mochila: 0/6</p>
+    </div>
 
     <ul id="ListaPokemons" style="list-style: none;">
         <!-- Aqui vão os pokemons "gerados" no javascript-->
@@ -21,6 +28,8 @@
 
     <div id="tela" class="modal">
         <div id="selection"><!--Aqui aparecem o pokemon do Id epecifico --></div>
+        <img id="pokebola" src="./src/imagens/pokebola.png" alt="Mini Pokébola">
     </div>
+
 </body>
 </html>

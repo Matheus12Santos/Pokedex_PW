@@ -13,16 +13,52 @@ body {
     margin-bottom: 150px;
 }
 
-#pokebola {
-    width: 50px;
+#remote {
+    display: flex;
+    align-items: center;
 }
 
 #searchBar {
-    width: 550px;
+    width: 560px;
     height: 40px;
     margin: 0 auto;
+    margin-bottom: 50px;
     display: block;
     text-align: center;
+}
+
+#backpack {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: -23px;
+    right: 10px;
+}
+
+#backpack_modal {
+    display: none;
+    width: 40%;
+    height: 80%;
+    background-color: white;
+    background-color: rgba(255, 255, 255, 0.918);
+    position: absolute;
+    top: 246px;
+    left: 860px;
+}
+
+.pokemon-name {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.pokemon-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.pokemon-img {
+    
 }
 
 #ListaPokemons {
@@ -38,6 +74,20 @@ body {
     box-shadow: 12px 21px 22px 0px rgba(0,0,0,0.1);
     margin: 3px;
     padding: 18px;
+}
+
+.capture-button {
+    /* Adicione aqui os estilos para o botão */
+    background-color: #4CAF50; /* Verde */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
 }
 
 .modal {
@@ -57,4 +107,17 @@ body {
     margin-left: 40%;
     margin-bottom: 50px;
     border: 3px solid #000000;
+}
+
+#pokebola {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+}
+
+#not_found {
+    width: 100px;
+    height: 500px;
 }
