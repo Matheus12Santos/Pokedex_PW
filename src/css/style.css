@@ -57,9 +57,9 @@ body {
     gap: 10px;
 }
 
-.pokemon-img {
+/*.pokemon-img {
     
-}
+}*/
 
 #ListaPokemons {
     display: flex;
