@@ -77,8 +77,7 @@ body {
 }
 
 .capture-button {
-    /* Adicione aqui os estilos para o botão */
-    background-color: #4CAF50; /* Verde */
+    background-color: #4CAF50;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -92,19 +91,27 @@ body {
 
 .modal {
     display: none;
-    width: 50%; /* Largura total */
-    height: 80%; /* Altura total */
-    background-color: white; /* Cor de fundo do Modal */
-    background-color: rgba(255, 255, 255, 0.918); /* Cor de fundo do Modal com opacidade */
+    width: 50%; 
+    height: 80%;
+    background-color: white;
+    background-color: rgba(255, 255, 255, 0.918);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
+#selection {
+    font-size: 20px;
+    position: relative;
+    bottom: 7px;
+}
+
 #selection img {
-    margin-bottom: 50px;
+    display: grid;
     border: 3px solid #000000;
+    position: relative;
+    left: 43%;
 }
 
 #pokebola {
@@ -118,6 +125,4 @@ body {
 #not_found {
     width: 600px;
     height: 500px;
-    position: relative;
-    left: 77px;
 }

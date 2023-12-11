@@ -108,6 +108,11 @@ function searchIdPokemon() {
             });
         var modal = document.getElementById('tela');
         modal.style.display = "block";
+        modal.addEventListener('click', function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        });
     }
     else {
         var modalContent = 'Pokemon não encontrado' + '<br><img id="not_found" src="./src/imagens/pokemon_not_found.png" alt="pokemon_nao_encontrado">';
@@ -116,6 +121,11 @@ function searchIdPokemon() {
         modal.style.display = "block";
         var poke_sumir = document.getElementById('pokebola')
         poke_sumir.style.display = "none";
+        modal.addEventListener('click', function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        });
     }
 }
 
